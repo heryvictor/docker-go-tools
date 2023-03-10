@@ -5,7 +5,7 @@ help:
 		| sort \
 		| awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s:\033[0m %s\n", $$1, $$2}'
 
-VERSION = 0.1.0
+VERSION = 0.1.1
 
 .PHONY: clean
 clean: ## It removes the generated images locally, if they exists
